@@ -33,6 +33,7 @@ bool IsDiscInDrive(const wchar_t driveLetter) {
 }
 
 int main() {
+    std::cout << "Remember to pay attention to the error you receive."
     wchar_t driveLetter = L'D';
     if (IsDiscInDrive(driveLetter)) {
         std::cout << "Disc is present in drive " << driveLetter << std::endl;
