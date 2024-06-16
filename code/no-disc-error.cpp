@@ -2,6 +2,7 @@
 #include <windows.h>
 #include <ioapiset.h>
 
+int errormessage() {
 bool IsDiscInDrive(const wchar_t driveLetter) {
     // Construct the drive path (e.g., "D:")
     wchar_t drivePath[] = { driveLetter, L':', L'\\', L'\0' };
@@ -43,4 +44,6 @@ int main() {
     system("pause");
 
     return 0;
+}
+
 }
